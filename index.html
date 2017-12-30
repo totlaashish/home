@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .container{
+        display: flex;
+        width: 120%;
+        height: 100vh;
+        position: relative;
+        left: -10%;
+      }
+      .one{
+        background-image: linear-gradient(rgba(0,200,0,.4),rgba(0,200,0,.4)),url("gulliver.jpg");
+        height: 100vh;
+        width: 150%;
+        transition: .4s ease-in-out;
+        filter: grayscale(100%);
+      }
+      .one,.two,.three,.four,.five,.six,.seven,.eight{
+        transition: .4s ease-in-out;
+        /*filter: grayscale(70%);*/
+        filter: blur(2px);
+        background-size: cover;
+        background-position: center;
+        font-family: besom;
+      }
+      .one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover,.eight:hover{
+        width: 200%;
+      /*  filter: grayscale(0);*/
+      filter: blur(0);
+      }
+      .one:hover>h1,.two:hover>h1,.three:hover>h1,.four:hover>h1,.five:hover>h1,.six:hover>h1,.seven:hover>h1,.eight:hover>h1{
+        font-size: 50px;
+      }
+      .two{
+        background-image: url("ben10.jpg");
+        height: 100vh;
+        width: 100%;
+      }
+      .three{
+        background-image: linear-gradient(rgba(255,225,0,.2),rgba(255,255,0,.2)),url("jhonny.jpg");
+        height: 100vh;
+        width: 100%;
+      }
+      .four{
+        background-image: linear-gradient(rgba(255,105,180,.2),rgba(255,105,180,.2)),url("barbie2.jpeg");
+        height: 100vh;
+        width: 100%;
+      }
+      .five{
+        background-image: linear-gradient(rgba(0,0,200,.4),rgba(0,0,200,.4)),url("scooby.png");
+        height: 100vh;
+        width: 100%;
+      }
+      .six{
+        background-image: linear-gradient(rgba(0,0,200,.4),rgba(0,0,200,.4)),url("powerpuff.jpg");
+        height: 100vh;
+        width: 100%;
+      }
+      .seven{
+        background-image: linear-gradient(rgba(200,0,0,.5),rgba(200,0,0,.5)),url("tom and jerry.gif");
+        height: 100vh;
+        width: 100%;
+      }
+      .eight{
+        background-image: linear-gradient(rgba(255,225,0,.2),rgba(255,255,0,.2)),url("pokemon.jpg");
+        height: 100vh;
+        width: 150%;
+      }
+      h1{
+        color: white;
+        font-size: 100px;
+        text-align: center;
+        padding-top: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">
+        <h1>V</h1>
+      </div>
+      <div class="two">
+        <h1>I</h1>
+      </div>
+      <div class="three">
+        <h1>V</h1>
+      </div>
+      <div class="four">
+        <h1>A</h1>
+      </div>
+      <div class="five">
+        <h1>C</h1>
+      </div>
+      <div class="six">
+        <h1>I</h1>
+      </div>
+      <div class="seven">
+        <h1>T</h1>
+      </div>
+      <div class="eight">
+        <h1>Y</h1>
+      </div>
+    </div>
+  </body>
+</html>

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style media="screen">
 
@@ -35,6 +36,7 @@
         background-size: cover;
         background-position: center;
         font-family: besom;
+        overflow: hidden;
       }
       .one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover,.eight:hover{
         width: 200%;
@@ -43,6 +45,7 @@
       }
       .one:hover>h1,.two:hover>h1,.three:hover>h1,.four:hover>h1,.five:hover>h1,.six:hover>h1,.seven:hover>h1,.eight:hover>h1{
         font-size: 50px;
+        opacity: 1;
       }
       .two{
         background-image: url("ben10.jpg");
@@ -81,37 +84,46 @@
       }
       h1{
         color: white;
-        font-size: 100px;
+        font-size: 0px;
         text-align: center;
         padding-top: 50%;
+      }
+      h1>span{
+        font-size: 100px;
+        color: black;
+        width:100%;
+      }
+      .one>h1{
+        position: relative;
+        left: -20px;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="one">
-        <h1>V</h1>
+        <h1><span>V</span></h1>
       </div>
       <div class="two">
-        <h1>I</h1>
+        <h1><span>I</span></h1>
       </div>
       <div class="three">
-        <h1>V</h1>
+        <h1><span>V</span></h1>
       </div>
       <div class="four">
-        <h1>A</h1>
+        <h1>B<span>A</span>RBIE</h1>
       </div>
       <div class="five">
-        <h1>C</h1>
+        <h1><span>C</span></h1>
       </div>
       <div class="six">
-        <h1>I</h1>
+        <h1><span>I</span></h1>
       </div>
       <div class="seven">
-        <h1>T</h1>
+        <h1><span>T</span></h1>
       </div>
       <div class="eight">
-        <h1>Y</h1>
+        <h1><span>Y</span></h1>
       </div>
     </div>
   </body>
